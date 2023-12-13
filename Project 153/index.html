@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = './suba.js'></script>
+        <script src = './coins.js'></script>
+        <script src = './game.js'></script>
+        <a-assets timeout = '1000'>
+            <a-asset-item src = './fantasy_island/scene.gltf' id = 'island' >
+            </a-asset-item>
+            <a-asset-item src="" id="scuba"></a-asset-item>
+            <a-asset-item src="" id="coins"></a-asset-item>
+
+
+        </a-assets>
+      </head>
+      <body>
+<a-camera position = '0 50 50'></a-camera>
+        <a-scene background = 'color:blue' game>
+
+<a-entity gltf-model = '#island' position = '30 -50 0' rotation = '0 0 0' scale = '1 1 1' scuba></a-entity>
+<a-entity gltf-model = '#scuba' position = '0 5 0' rotation = '0 0 0' scale = '1 1 1' scuba></a-entity>
+<a-entity gltf-model = '#scuba'scale = '1 1 1' coins></a-entity>
+        </a-scene>
+        
+      </body>
+</html>
